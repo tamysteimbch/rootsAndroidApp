@@ -19,30 +19,28 @@
 
     <EditText
         android:id="@+id/etLoginEmailClient"
-        android:layout_width="319dp"
+        android:layout_width="295dp"
         android:layout_height="53dp"
         android:layout_marginTop="28dp"
         android:ems="10"
+        android:hint="E-mail"
         android:inputType="textEmailAddress"
         android:textColor="#FDFDFD"
-        android:hint="E-mail"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#BCFFFFFF"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        tools:text="email@email.com" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
         android:id="@+id/etLoginPasswordClient"
-        android:layout_width="319dp"
-        android:layout_height="61dp"
+        android:layout_width="295dp"
+        android:layout_height="53dp"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
-        android:hint="Password"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#BDFFFFFF"
         app:layout_constraintStart_toStartOf="@+id/etLoginEmailClient"
-        app:layout_constraintTop_toBottomOf="@+id/etLoginEmailClient"
-        tools:text="password" />
+        app:layout_constraintTop_toBottomOf="@+id/etLoginEmailClient" />
 
     <Button
         android:id="@+id/bClientLogin"
@@ -61,11 +59,9 @@
 
     <Button
         android:id="@+id/bForgotPasswordClient"
-        android:layout_width="205dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="167dp"
+        android:layout_width="182dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
         android:background="#00FFFFFF"
         android:drawableTint="#00FFFFFF"
         android:text="Forgot your password?"
@@ -73,8 +69,8 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textColorLink="#00FFFFFF"
+        android:textSize="12sp"
         app:iconTint="#3F51B5"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etLoginPasswordClient" />
 
@@ -82,9 +78,8 @@
         android:id="@+id/bRegisterClient"
         android:layout_width="110dp"
         android:layout_height="41dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="46dp"
         android:background="#00FFFFFF"
         android:drawableTint="#00FFFFFF"
         android:text="Register"
@@ -92,10 +87,10 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textColorLink="#00FFFFFF"
+        android:textSize="12sp"
         app:iconTint="#3F51B5"
         app:layout_constraintBottom_toTopOf="@+id/bClientLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bForgotPasswordClient" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/bPartnerRegisterLogin"

@@ -17,6 +17,7 @@ public class PasswordResetLoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_password_reset_login);
+        declarations();
 
         bSendEmailPassword.setOnClickListener(v ->{
 
@@ -34,6 +35,7 @@ public class PasswordResetLoginActivity extends AppCompatActivity {
         });
         bBackToLoginPassword.setOnClickListener(v ->{
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
         });
 
     }

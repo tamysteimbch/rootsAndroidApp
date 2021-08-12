@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         bForgotPasswordClient.setOnClickListener(v ->{
-            Intent intentForgotPassword = new Intent(getApplicationContext(), PasswordResetLoginActivity.class);
+            Intent intentForgotPassword = new Intent(this, PasswordResetLoginActivity.class);
             startActivity(intentForgotPassword);
         });
 

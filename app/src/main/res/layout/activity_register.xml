@@ -23,7 +23,7 @@
         android:id="@+id/textView"
         android:layout_width="159dp"
         android:layout_height="46dp"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="-4dp"
         android:layout_marginTop="42dp"
         android:text="Registration"
         android:textColor="#FFFFFF"
@@ -34,13 +34,13 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="215dp"
-        android:layout_height="38dp"
+        android:layout_height="25dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="146dp"
         android:text="Name:"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -48,12 +48,12 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="215dp"
-        android:layout_height="38dp"
+        android:layout_height="25dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="146dp"
         android:text="Birth:"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmailRegistration" />
@@ -61,12 +61,12 @@
     <TextView
         android:id="@+id/textView6"
         android:layout_width="215dp"
-        android:layout_height="38dp"
+        android:layout_height="25dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="146dp"
         android:text="Password:"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etBirthRegistration" />
@@ -74,12 +74,12 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="215dp"
-        android:layout_height="38dp"
+        android:layout_height="25dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="146dp"
         android:text="E-mail:"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNameRegistration" />
@@ -91,8 +91,8 @@
         android:ems="10"
         android:hint="email@email.com"
         android:inputType="textEmailAddress"
-        android:textColor="#FFFFFF"
-        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="#BDFFFFFF"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -103,7 +103,8 @@
         android:ems="10"
         android:hint="01/01/1999"
         android:inputType="date"
-        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="#BDFFFFFF"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -112,25 +113,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="480dp"
+        android:layout_marginEnd="17dp"
         android:backgroundTint="@color/rootsbutton"
         android:text="Back"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822" />
 
     <Button
         android:id="@+id/bSaveRegistration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="480dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="168dp"
         android:backgroundTint="@color/rootsbutton"
         android:text="Save"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/etPasswordRegistration"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordRegistration" />
 
     <EditText
         android:id="@+id/etPasswordRegistration"
@@ -139,10 +142,10 @@
         android:ems="10"
         android:hint="*********"
         android:inputType="textPassword"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:textColorHint="@color/white" />
+        tools:textColorHint="#BDFFFFFF" />
 
     <EditText
         android:id="@+id/etNameRegistration"
@@ -151,7 +154,8 @@
         android:ems="10"
         android:hint="John Smith"
         android:inputType="textPersonName"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:textColorHint="@color/white" />
+        tools:textColorHint="#BDFFFFFF" />
 </androidx.constraintlayout.widget.ConstraintLayout>
