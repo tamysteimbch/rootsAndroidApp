@@ -27,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "All fields are required", Toast.LENGTH_LONG).show();
 
             } else {
-
                 Toast.makeText(getApplicationContext(), "Login complete", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(intent);
             }
 
         });
